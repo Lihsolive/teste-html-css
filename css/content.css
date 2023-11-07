@@ -1,0 +1,26 @@
+.content-first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-first-img img {
+    width: 196px; /* Adicione esta linha */
+}
+
+.content-second .imagens {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-second .imagens img {
+    width: 196px; /* Modifique esta linha */
+  height: 163px;
+}
+
+.content-second .imagens .img a {
+  display: block;
+  font-size: 18px;
+  width: 196px;
+  word-wrap: break-word;
+  text-align: justify;
+}

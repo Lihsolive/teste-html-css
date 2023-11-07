@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teste - Ideal Trends</title>
     <!-- Nivo Slider -->
-    <link rel="stylesheet" href="lib/nivoSlider/themes/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="lib/nivoSlider/nivo-slider.css" type="text/css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="lib/nivoSlider/themes/default/default.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="lib/nivoSlider/nivo-slider.css"
+      type="text/css"
+      media="screen"
+    />
     <!-- Estilos -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/content.css" />
   </head>
 
   <body>
@@ -23,9 +34,9 @@
       </div>
       <!-- Navbar -->
       <div class="container-navbar">
-        <a class="logo" href="#"
-          ><img src="./assets/img/logo.svg" alt="Logo"
-        /></a>
+        <a class="logo" href="#">
+          <img src="./assets/img/logo.svg" alt="Logo" />
+        </a>
         <nav class="navbar">
           <a class="nav-link" href="#">Home</a>
           <div class="dropdown">
@@ -50,16 +61,84 @@
         </nav>
       </div>
     </header>
-    
-    <main>   
-      <div id="slider" class="nivoSlider"> 
-        <img src="assets/img/img.jpg" data-thumb="assets/img/img.jpg" alt="Primeira imagem do Slider" /> 
-        <img src="assets/img/img1.jpg" data-thumb="assets/img/img1.jpg" alt="Segunda imagem do Slide" title="Slider" />
-        </div>
+
+    <main>
       <!-- Slider -->
+      <div id="slider" class="nivoSlider theme-default">
+        <img
+          src="assets/img/img.jpg"
+          data-thumb="assets/img/img.jpg"
+          alt="Primeira imagem do Slider"
+        />
+        <img
+          src="assets/img/img1.jpg"
+          data-thumb="assets/img/img1.jpg"
+          alt="Segunda imagem do Slide"
+          title="Slider"
+        />
+      </div>
+      <!-- Conteúdo -->
+      <section class="content-first">
+        <div class="content-first-text">
+          <h1 class="content-first-title">Teste de Html e Css</h1>
+          <h4 class="content-first-subtitle">Quesitos de avaliação</h4>
+          <ul class="content-first-list">
+            <li class="first-list-item">
+              Organização do código (quanto mais limpo melhor);
+            </li>
+            <li class="first-list-item">
+              Nível de detalhismo (quanto mais idêntico melhor);
+            </li>
+            <li class="first-list-item">
+              Tempo de desenvolvimento (seja sincero ao enviar o tempo gasto);
+            </li>
+          </ul>
+          <p class="content-text">Obrigada e boa sorte!</p>
+        </div>
+        <div class="content-first-img">
+          <img src="assets/img/exemplo.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="content-second">
+        <h1>Boxes de destaque</h1>
+        <div class="imagens">
+          <div class="img">
+            <img src="assets/img/exemplo.jpg" alt="" />
+            <a href="">Um texto descritivo com link apenas</a>
+          </div>
+
+          <div class="img">
+            <img src="assets/img/exemplo.jpg" alt="" />
+            <a href="">Um texto descritivo com link apenas</a>
+          </div>
+
+          <div class="img">
+            <img src="assets/img/exemplo.jpg" alt="" />
+            <a href="">Um texto descritivo com link apenas</a>
+          </div>
+          
+          <div class="img">
+            <img src="assets/img/exemplo.jpg" alt="" />
+            <a href="">Um texto descritivo com link apenas</a>
+          </div>
+
+         
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <nav class="navbar">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Empresa</a>
+        <a class="nav-link" href="#">Clientes</a>
+        <a class="nav-link" href="#">Contato</a>
+      </nav>
+      <a class="logo" href="#">
+        <img src="./assets/img/logo.svg" alt="Logo" />
+      </a>
+    </footer>
 
     <!-- Jquery -->
     <script src="js/jquery.js"></script>
@@ -67,7 +146,5 @@
     <script src="lib/nivoSlider/jquery.nivo.slider.js"></script>
     <!-- Script -->
     <script src="js/script.js"></script>
-
-
   </body>
 </html>
