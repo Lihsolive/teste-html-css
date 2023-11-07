@@ -1,0 +1,90 @@
+/* Navbar */
+.container-number {
+  background-color: blue;
+  display: flex;
+  justify-content: end;
+  padding: 5px 100px;
+}
+
+.container-number p {
+  color: white;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+.logo img {
+  height: 50px;
+  padding: 10px;
+}
+
+.nav-link {
+  color: rgb(175, 175, 175);
+  padding: 0 5px;
+  margin-right: 0 5px;
+  text-transform: uppercase;
+}
+
+/* Contêiner do menu suspenso */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Menu suspenso */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+/* Links do menu suspenso */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  background: blue;
+  padding: 5px 16px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+/* Menu suspenso */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Submenu */
+.dropdown-content .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content .dropdown .dropdown-content {
+    display: none;
+    top: 0;
+    left: 100%;
+    transform: none;
+  }
+  
+  .dropdown-content .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+/* Slider */
+
+/*  Teste de HTML e CSS*/
+
+/* Boxes de Destaque */
+
+/* Footer */
