@@ -1,36 +1,34 @@
 /* Navbar */
-.container-number {
+.container-phone {
   background-color: blue;
   display: flex;
   justify-content: end;
-  padding: 5px 100px;
+  padding: 5px 115px;
+  gap: 30px;
 }
 
-.container-number p {
+.container-phone p {
   color: white;
   font-size: 15px;
-  margin-right: 5px;
 }
 .container-navbar {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
-  margin: 0 100px;
+  margin: 10px 0;
 }
 
 .logo img {
-  height: 50px;
-  padding: 10px;
+  height: 40px;
 }
 
 .nav-link {
   color: rgb(175, 175, 175);
-  padding: 0 5px;
-  margin-right: 0 5px;
   text-transform: uppercase;
+  margin-right: 15px;
 }
 
-/* Contêiner do menu suspenso */
+/* Conteiner menu suspenso */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -38,16 +36,16 @@
 
 /* Menu suspenso */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    z-index: 1;
-    box-sizing: border-box;
-    text-align: center;
-    white-space: nowrap;
-  }
+  display: none;
+  position: absolute;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  z-index: 1;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+}
 
 /* Links do menu suspenso */
 .dropdown-content a {
@@ -59,27 +57,28 @@
   font-size: 15px;
 }
 
-/* Menu suspenso */
+/* Menu suspenso ao passar o mouse */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 /* Submenu */
 .dropdown-content .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-content .dropdown .dropdown-content {
-    display: none;
-    top: 0;
-    left: 100%;
-    transform: none;
-  }
-  
-  .dropdown-content .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
+  position: relative;
+}
+
+/* Submenu escondido*/
+.dropdown-content .dropdown .dropdown-content {
+  display: none;
+  top: 0;
+  left: 100%;
+  transform: none;
+}
+
+/* Submenu ao passar o mouse  */
+.dropdown-content .dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Slider */
 

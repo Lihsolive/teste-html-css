@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teste - Ideal Trends</title>
+    <!-- Nivo Slider -->
+    <link rel="stylesheet" href="lib/nivoSlider/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="lib/nivoSlider/nivo-slider.css" type="text/css" media="screen" />
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/slider.css" />
   </head>
+
   <body>
     <header>
       <!-- Telefones -->
-      <div class="container-number">
+      <div class="container-phone">
         <p>11 1234-1234</p>
         <p>11 1234-1234</p>
       </div>
@@ -44,14 +50,24 @@
         </nav>
       </div>
     </header>
-
-    <main>
-
+    
+    <main>   
+      <div id="slider" class="nivoSlider"> 
+        <img src="assets/img/img.jpg" data-thumb="assets/img/img.jpg" alt="Primeira imagem do Slider" /> 
+        <img src="assets/img/img1.jpg" data-thumb="assets/img/img1.jpg" alt="Segunda imagem do Slide" title="Slider" />
+        </div>
+      <!-- Slider -->
     </main>
 
-    <footer>
-        
-    </footer>
+    <footer></footer>
+
+    <!-- Jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- Nivo  -->
+    <script src="lib/nivoSlider/jquery.nivo.slider.js"></script>
+    <!-- Script -->
+    <script src="js/script.js"></script>
+
 
   </body>
 </html>
