@@ -70,7 +70,7 @@
   }
 }
 
-@media (min-width: 540px) {
+@media (min-width: 540px) and (max-width: 780px) {
   #slider {
     height: 175px;
   }
