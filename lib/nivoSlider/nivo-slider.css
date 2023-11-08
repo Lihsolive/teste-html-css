@@ -76,6 +76,7 @@
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
+	display: none !important;
 }
 .nivo-caption p {
 	padding:5px;
@@ -107,7 +108,12 @@
 }
 .nivo-controlNav a {
 	cursor:pointer;
+	text-indent: -9999px; /* Adicione esta linha para esconder o texto */
+	background: url('./themes/light/bullets.png') no-repeat; /* Adicione esta linha */
+	width: 12px; /* Adicione esta linha para definir a largura do bullet */
+	height: 12px; /* Adicione esta linha para definir a altura do bullet */
+	display: inline-block; /* Adicione esta linha para permitir que width e height sejam aplicados */
 }
 .nivo-controlNav a.active {
-	font-weight:bold;
+	background: url('./themes/dark/bullets.png') no-repeat;
 }

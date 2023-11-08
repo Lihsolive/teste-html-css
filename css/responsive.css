@@ -1,0 +1,136 @@
+/* Mobile */
+@media (min-width: 280px) and (max-width: 539px) {
+  body {
+    margin: 0 20px;
+  }
+  .nivoSlider img {
+    height: 190px;
+  }
+  h1,
+  h4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .container-phone {
+    display: none;
+  }
+  .content-list {
+    margin-bottom: 20px;
+  }
+  .content-img {
+    margin-top: 20px;
+  }
+  .servicos-imagens {
+    flex-wrap: wrap;
+  }
+  .content-first {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .servicos-img-link img {
+    margin: 20px 0;
+    width: 250px;
+  }
+  .footer-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer-navbar,
+  .footer-logo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-logo img {
+    height: 30px;
+  }
+  .container-phone,
+  .nivoSlider,
+  footer {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-phone {
+    display: flex;
+  }
+  h1,
+  h4 {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .content-first {
+    flex-direction: row;
+  }
+  .footer-navbar {
+    flex-direction: row;
+  }
+  .footer-link {
+    margin: 20px;
+  }
+}
+
+/*Deixando o Menu Responsivo */
+@media (max-width: 800px) {
+  .bt_menu {
+    display: block;
+  }
+  label[for="bt_menu"] {
+    display: block;
+  }
+
+  #bt_menu:checked ~ .menu {
+    right: 0;
+  }
+
+  .menu {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    right: -50%;
+    transition: right 0.4s;
+    padding-top: 30px;
+    margin-top: 10px;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu ul li {
+    width: 100%;
+  }
+
+  .menu .dropdown-one,
+  .dropdown-two {
+    position: static;
+    transition: all 4s;
+  }
+  .dropdown-two {
+    left: 0;
+    top: 0;
+  }
+
+  .menu ul li:hover ul {
+    display: none;
+  }
+
+  .menu ul li:focus-within ul {
+    display: block;
+  }
+
+  .menu,
+  .menu a {
+    background-color: #313ece;
+    top: 50px;
+    z-index: 1000;
+    color: #fff;
+  }
+  .menu a:hover {
+    color: #b2b2b2;
+  }
+}

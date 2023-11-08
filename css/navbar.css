@@ -1,6 +1,5 @@
-/* Navbar */
 .container-phone {
-  background-color: blue;
+  background-color: #001029;
   display: flex;
   justify-content: end;
   padding: 5px 115px;
@@ -9,81 +8,84 @@
 
 .container-phone p {
   color: white;
-  font-size: 15px;
+  font-size: 12px;
 }
-.container-navbar {
+
+.container {
   display: flex;
-  align-items: end;
   justify-content: space-between;
-  margin: 10px 0;
+  align-items: flex-end;
 }
 
-.logo img {
-  height: 40px;
+.container .logo {
+  height: 60px;
+  padding-top: 10px;
 }
 
-.nav-link {
+.bt_menu {
+  display: none;
+  z-index: 1000;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu a {
+  padding: 5px;
+  margin-right: 5px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
   color: rgb(175, 175, 175);
   text-transform: uppercase;
-  margin-right: 15px;
 }
 
-/* Conteiner menu suspenso */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Menu suspenso */
-.dropdown-content {
-  display: none;
+.menu .dropdown-one {
   position: absolute;
-  left: 50%;
-  right: auto;
-  transform: translateX(-50%);
-  z-index: 1000;
-  box-sizing: border-box;
-  text-align: center;
-  white-space: nowrap;
-}
-
-/* Links do menu suspenso */
-.dropdown-content a {
-  color: rgb(255, 255, 255);
-  background: blue;
-  padding: 5px 16px;
-  display: block;
-  text-transform: uppercase;
-  font-size: 15px;
-}
-
-/* Menu suspenso ao passar o mouse */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Submenu */
-.dropdown-content .dropdown {
-  position: relative;
-}
-
-/* Submenu escondido*/
-.dropdown-content .dropdown .dropdown-content {
   display: none;
-  top: 0;
-  left: 100%;
-  transform: none;
+  flex-direction: column;
+  z-index: 1000;
 }
 
-/* Submenu ao passar o mouse  */
-.dropdown-content .dropdown:hover .dropdown-content {
+.menu .dropdown-two {
+  flex-direction: column;
+  top: -30px;
+  left: 97px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu ul li:hover > ul {
   display: block;
 }
 
-/* Slider */
+.menu a:hover {
+  color: #555;
+}
 
-/*  Teste de HTML e CSS*/
+.menu ul ul li a {
+  background-color: #001029;
+  color: #fff;
+}
 
-/* Boxes de Destaque */
+/*Criando o label */
+label[for="bt_menu"] {
+  margin-bottom: 10px;
+  color: #020c79;
+  font-family: Arial;
+  font-size: 40px;
+  cursor: pointer;
+  height: 50px;
+}
 
-/* Footer */
+#bt_menu {
+  display: none;
+}

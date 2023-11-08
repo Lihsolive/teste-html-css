@@ -3,24 +3,39 @@
   justify-content: space-between;
 }
 
-.content-first-img img {
-    width: 196px; /* Adicione esta linha */
+h1,
+h4 {
+  margin: 20px 0;
 }
 
-.content-second .imagens {
+.content-list {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.content-img img {
+  width: 325px;
+  height: 212px;
+}
+
+.servicos-imagens {
   display: flex;
   justify-content: space-between;
 }
 
-.content-second .imagens img {
-    width: 196px; /* Modifique esta linha */
+.servicos-img-link img {
+  width: 196px; /* Modifique esta linha */
   height: 163px;
 }
 
-.content-second .imagens .img a {
+.servicos-imagens .servicos-img-link a {
   display: block;
-  font-size: 18px;
+  font-size: 15px;
   width: 196px;
   word-wrap: break-word;
   text-align: justify;
+}
+
+.servicos-imagens .servicos-img-link a:hover {
+  color: #373737;
 }
