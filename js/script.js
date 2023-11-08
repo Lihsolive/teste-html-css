@@ -4,5 +4,3 @@ $(window).on("load", function () {
     effect: "sliceDownRight",
   });
 });
-
-// menu responsivo
