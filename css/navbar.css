@@ -57,13 +57,13 @@
 
 .menu .dropdown-two {
   flex-direction: column;
-  top: -30px;
-  left: 97px;
+  top: -40px;
+  left: 140px;
   width: 100%;
   z-index: 1000;
 }
 
-.menu ul li:hover > ul {
+.menu ul li.show-dropdown:hover > ul {
   display: block;
 }
 
@@ -79,7 +79,7 @@
 /*Criando o label */
 label[for="bt_menu"] {
   margin-bottom: 10px;
-  color: #020c79;
+  color: #001029;
   font-family: Arial;
   font-size: 40px;
   cursor: pointer;

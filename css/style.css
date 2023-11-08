@@ -15,6 +15,7 @@ ul {
   color: rgb(105, 105, 105);
 }
 
+/* para que a margem do body não interfira nesses elementos */
 .container-phone,
 .slider,
 footer {
